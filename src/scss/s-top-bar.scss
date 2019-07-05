@@ -1,0 +1,60 @@
+.topbar {
+  font-size: $min-font;
+  border-bottom: 1px solid $border-color;
+  width: 100%;
+  height: 40px;
+  &-inner {
+    max-width: 62%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 255px;
+    @extend %margin-center;
+    &-text {
+      margin-left: 10px;
+    }
+
+    .contact {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      @extend %margin-topbar;
+      &-el {
+        float: left;
+        &-text {
+          margin-top: 2px;
+          height: 16px;
+          width: 140px;
+        }
+        .t1 {
+          width:106px;
+        }
+        &-img {
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    }
+    .signin {
+      height: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      display: grid;
+      grid-template-columns: 122px 133px;
+      border-right: 1px solid $border-color;
+      &-option {
+        padding-top: 12px;
+        border-left: 1px solid $border-color;
+        &-img {
+          margin-left: 15%;
+          float: left;
+        }
+        &-text {
+          width: 90%;
+          height: 16px;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "aurora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-wait": "0.0.2"
+  },
+  "author": "Aleksandra Wiktorzak",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
