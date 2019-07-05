@@ -4,6 +4,10 @@ $border-color: #d7d7d7;
 
 $min-font: 12px;
 
+%page-width{
+    width: 62%;
+    max-width:1240px;
+}
 %margin-topbar{
     margin-top: auto;
      margin-bottom: auto;
