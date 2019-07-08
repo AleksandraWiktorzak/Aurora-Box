@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+$font-fam: 'Lato', sans-serif;
+$min-font: 12px;
+$basket-product-font:$min-font*0.8;
+$button-font: $min-font*1.2;
+
+$red: #c8312a;
 $pink: #ed2b6a;
+$pink-button:#ea316b;
 $light-pink: #ecc7cf;
 $border-color: #d7d7d7;
-
-$min-font: 12px;
+$menu-hover-color:#0f1a20;
+$pale-black: #191919;
+$black: black;
+$white: white;
 
 %page-width{
     width: 62%;
@@ -15,4 +26,8 @@ $min-font: 12px;
 %margin-center{
     margin-left: auto;
         margin-right: auto;
+}
+.closed{
+    visibility: hidden;
+    opacity: 0;
 }

@@ -39,6 +39,7 @@ gulp.task('serve', function () {
   browserSync.init({
     server: './web'
   });
+  gulp.watch('./src/images/*', ['img']);
   gulp.watch('./src/js/main.js', ['js']);
   gulp.watch('./src/templates/index.html', ['reload']);
   gulp.watch('./src/scss/*.scss', ['sass']);
@@ -52,7 +53,7 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+      overrideBrowserslist: ['last 2 versions'],
       cascade: false,
       grid: "autoplace"
   }))

@@ -8,6 +8,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 255px;
+    grid-template-rows:1fr;
     @extend %margin-center;
     &-text {
       margin-left: 10px;
@@ -27,6 +28,9 @@
         .t1 {
           width:106px;
         }
+        .t2{
+          width:145px; 
+        }
         &-img {
           float: left;
           margin-right: 10px;
@@ -41,10 +45,16 @@
       grid-column-end: 3;
       display: grid;
       grid-template-columns: 122px 133px;
+      grid-template-rows:1fr;
       border-right: 1px solid $border-color;
       &-option {
         padding-top: 12px;
         border-left: 1px solid $border-color;
+        &:hover{
+          cursor: pointer;
+          color: $light-pink;
+          transition-duration:200ms;
+        }
         &-img {
           margin-left: 15%;
           float: left;
@@ -58,8 +68,10 @@
     }
     @media screen and (max-width:390px){ 
         grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
         .signin{
             grid-template-columns: 1fr 1fr;
+            grid-template-rows:1fr;
            &-option{
                padding: 0;
                padding-left: 32%;
@@ -79,14 +91,16 @@
         } 
         } 
     }
-    @media screen and (max-width:787px) {
-        .contact-el{
-            margin-left: 2%;
-        }
-    }
-    @media screen and (max-width:979px){
+    
+    @media screen and (max-width:999px){
         width:100%;
+        .contact-el{
+          margin-left: 2%;
+      }
     }
+    @media screen and (min-width:1000px) and (max-width:1150px){
+      width:80%;
+  }
   }
   
 }
