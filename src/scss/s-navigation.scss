@@ -1,0 +1,81 @@
+.nav {
+  box-sizing: border-box;
+  @extend %page-width;
+  @extend %margin-center;
+  height: 70px;
+  font-weight: 600;
+  .nav-list {
+    &-el{
+      position: relative;
+      box-sizing: border-box;
+      border-bottom: 1px solid $border-color;
+        padding-top: 30px;
+        height:70px;
+        .wrapper{
+          background-color: $black;
+          box-sizing: border-box;
+          height: 275px;
+          position: absolute;
+            bottom: -276px;
+            padding-bottom: 15%;
+          .category-more{
+              background-color: $black;
+              color: $white;
+              font-weight: 400;
+              height: 100%;
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            width:140px;
+            box-sizing: border-box;
+            &-box{
+            position: relative;
+              .option-more{
+                position: absolute;
+                width: 140px;
+                height: 240px;
+                background-color: palevioletred;
+                right:-140px;
+                top:0;
+
+
+              }
+              .option{
+                box-sizing: border-box;
+                height: 100%;
+                padding-top: 9%;
+                .text{
+                  box-sizing: border-box;
+                  height: 100%;
+                  width:100%;
+                  padding-left: 10%;
+                  padding-top:10%;
+                }
+                &:hover{
+                  .text{
+                    background-color: $basket-hover-color;
+                    color: $black;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:hover{
+          .category-more{
+            visibility: visible;
+            opacity: 1;
+          }        
+        }
+    }
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.9fr 0.8fr 0.9fr 1fr 1.3fr 1.1fr 1fr 0.6fr 0.4fr;
+    .a {
+      color: $black;
+    }
+    .pink {
+      color: $light-pink;
+    }
+  }
+}

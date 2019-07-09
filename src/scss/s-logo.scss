@@ -1,3 +1,9 @@
+.page-header-inner{
+  @extend %page-width;
+  @extend %margin-center;
+  height: 128px;
+
+
 .logo-bar {
   display: grid;
   grid-template-columns: 2.5fr 40% 2fr;
@@ -66,7 +72,7 @@
       display: grid;
       &:hover {
         .basket-content-product:hover {
-          background-color: $menu-hover-color;
+          background-color: $basket-hover-color;
         }
       }
       transition: visibility 1s, opacity 0.2s linear;
@@ -151,11 +157,6 @@
       }
     }
     &:hover {
-      //
-      //     visibility: visible;
-      //     opacity: 1;
-      //   }
-
       cursor: pointer;
       .shopping-bag-pink {
         display: inline;
@@ -269,4 +270,14 @@
       margin-left: 7%;
     }
   }
+}
+@media screen and (max-width:979px){
+  width:100%;
+}
+@media screen and (min-width:1000px) and (max-width:1150px){
+  width:80%;
+}
+@media screen and (max-width: 999px) {
+width:90%    
+}
 }
