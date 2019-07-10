@@ -164,7 +164,8 @@
         grid-row-end: 5;
       }
     }
-    &:hover {
+    // @media screen and (min-width:1025px) {
+      &:hover {
       cursor: pointer;
       .shopping-bag-pink {
         display: inline;
@@ -176,6 +177,8 @@
         color: $light-pink;
       }
     }
+    // }
+    
     &-img {
       .shopping-bag-pink {
         display: none;
@@ -245,19 +248,10 @@
     grid-template-columns: 1.7fr 40% 2fr;
     grid-template-rows: 1fr;
     .basket {
-      margin-left: 45%;
+      margin-left: 30%;
     }
   }
-  @media screen and (max-width: 1200px) {
-    .basket {
-      margin-left: 35%;
-    }
-  }
-  @media screen and (min-width: 1000px) and (max-width: 1150px) {
-    .basket {
-      margin-left: 45%;
-    }
-  }
+  
   @media screen and (max-width: 1025px) {
     grid-template-columns: 2.5fr 40% 2fr 0.5fr;
     grid-template-rows: 1fr;
@@ -292,7 +286,8 @@ width:90%;
 @media screen and (max-width: 500px) {
   margin: 0;
   .search{
-    padding-left:4%
+    width: 90%;
+    padding-left:5%
   }
   .logo-img-box{
     padding-left:5%;
