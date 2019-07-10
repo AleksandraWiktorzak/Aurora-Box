@@ -18,19 +18,21 @@ Edytor zainstaluje wszystkie potrzebne wtyczki i udogodnienia wymagane do prawid
 ```html
 gulp
 ```
+Task runner odpali ją w oknie Twojej domyślnej przeglądarki.
 
 ## Opis i drobna pomoc
 
-### Pomocy?
+### Tutorial?
 
-- Koszyk wyświetla się po najechaniu myszką na `ikonę koszyka` ale jeśli jesteś na widoku mobile, kliknij w nią dwukrotnie by otworzyć oraz dwukotnie by zamknąć.
+- Koszyk wyświetla się po najechaniu myszką na `ikonę koszyka` ale jeśli jesteś na widoku mobile, kliknij w nią dwukrotnie by otworzyć     oraz dwukotnie by zamknąć.
 
-- Na widoku mobilnym menu otworzysz klikając w `hamburger menu`. Pierwsza pozycja jest interaktywna, możesz ją rozwinąć :)
+- Na widoku mobilnym `menu` otworzysz klikając w `hamburger menu`. Pierwsza pozycja jest interaktywna, możesz ją rozwinąć :)
 
-- Na widoku desktop wybrane elementy zmieniają kolor po najechaniu na nie myszką, a menu rozwija się po najechaniu myszką.
+- Na widoku desktop wybrane elementy zmieniają kolor po najechaniu na nie myszką, a `menu` rozwija się.
 
 ### Technika
-- Moja strona jest przystosowana do urządzeń mobilnych. Możesz to sprawdzić! Wejdź na [responsinator.com](https://www.responsinator.com/) i załaduj adres `http://localhost:3000/`. 
+- Moja strona jest przystosowana do urządzeń mobilnych. Możesz to sprawdzić! Wejdź na 
+  [responsinator.com](https://www.responsinator.com/) i załaduj adres `http://localhost:3000/`. 
   - Przy mniejszej rozdzielczości elementy zmieniają nieco swój oryginalny layout. Dzięki temu strona jest czytelniejsza.
 
 - Aby przyspieszyć ładowanie strony, zminifikowałam zdjęcia i kod html za pomocą task runnera `Gulp`.
@@ -42,4 +44,8 @@ gulp
 
 - Układając elementy strony, zastosowałam `layout model grid`.
 
-- Nie obyło się też bez użycia `Java Script'u`.
+- Użyłam pluginu `autoprefixer`, który wspomaga ujednolicenie layoutu na wszystkich przeglądarkach uwzględnionych przy tworzeniu strony   (Firefox (najnowsza), Chrome (najnowsza), Edge (najnowsza), Internet Explorer 11, Safari (najnowsza)).
+
+- Nie obyło się też bez użycia `Java Script'u` dzięki któremu wybrane elementy są interatkywne.
+
+# Dziękuję za uwagę :)
