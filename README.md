@@ -49,5 +49,5 @@ Task runner odpali ją w oknie Twojej domyślnej przeglądarki.
 - Nie obyło się też bez użycia `Java Script'u` dzięki któremu wybrane elementy są interatkywne.
 
 
-![alt obrazek papugi](https://image.flaticon.com/icons/svg/375/375079.svg)
+![alt obrazek papugi](<div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.c6f196fc04d37516d19b7f8f9d65f7d1.1556640092453.1562512021839.1562793921682.12&__hssc=57440181.3.1562793921682&__hsfp=1815675070" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>)
 # Dziękuję za uwagę :)
