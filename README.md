@@ -4,7 +4,7 @@ Projekt przedstawia header strony internetowej, wykonany na podstawie pliku graf
 
 ## Instalacja
 
--Aby wyświetlić stronę w przeglądarce musisz mieć zainstalowane środowisko `node.js`. Możesz je pobrać ze strony [Node.js](https://nodejs.org/en/), a następnie zainstalować na swoim komputerze.
+- Aby wyświetlić stronę w przeglądarce musisz mieć zainstalowane środowisko `node.js`. Możesz je pobrać ze strony [Node.js](https://nodejs.org/en/), a następnie zainstalować na swoim komputerze.
 
 -Pobierz mój projekt i otwórz go w swoim ulubionym edytorze kodu (np. Visual Studio Code).
 
