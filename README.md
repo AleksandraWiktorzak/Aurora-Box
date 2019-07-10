@@ -48,4 +48,6 @@ Task runner odpali ją w oknie Twojej domyślnej przeglądarki.
 
 - Nie obyło się też bez użycia `Java Script'u` dzięki któremu wybrane elementy są interatkywne.
 
+
+![alt obrazek papugi](https://image.flaticon.com/icons/svg/375/375079.svg)
 # Dziękuję za uwagę :)
