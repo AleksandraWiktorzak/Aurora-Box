@@ -1,33 +1,53 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
-$font-fam: 'Lato', sans-serif;
+$font-fam: "Lato", sans-serif;
 $min-font: 12px;
-$basket-product-font:$min-font*0.8;
-$button-font: $min-font*1.2;
+$basket-product-font: $min-font * 0.8;
+$button-font: $min-font * 1.2;
 
 $red: #c8312a;
 $pink: #ed2b6a;
-$pink-button:#ea316b;
+$pink-button: #ea316b;
 $light-pink: #ecc7cf;
 $border-color: #d7d7d7;
-$basket-hover-color:#0f1a20;
+$basket-hover-color: #0f1a20;
 $pale-black: #191919;
 $black: black;
 $white: white;
 
-%page-width{
-    width: 62%;
-    max-width:1240px;
+%page-width {
+  width: 62%;
+  max-width: 1240px;
 }
-%margin-topbar{
-    margin-top: auto;
-     margin-bottom: auto;
+%margin-topbar {
+  margin-top: auto;
+  margin-bottom: auto;
 }
-%margin-center{
-    margin-left: auto;
-        margin-right: auto;
+%margin-center {
+  margin-left: auto;
+  margin-right: auto;
 }
-.closed{
-    visibility: hidden;
-    opacity: 0;
+.closed {
+  visibility: hidden;
+  opacity: 0;
+}
+.closed-mobile {
+  @media screen and (max-width:1025px){
+    display:none;
+  opacity: 0;
+  }
+  
+}
+.arrow-active {
+  transition-duration: 1s;
+  transform: rotate(225deg)!important;
+  -webkit-transform: rotate(180deg);
+  
+  
+}
+.hamburger-open{
+  .hamburger-bar{
+    background-color: #ed2b6a !important;
+    transition-duration: 0.5s;
+  }
 }

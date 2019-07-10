@@ -6,12 +6,15 @@
   font-weight: 600;
   .nav-list {
     &-el{
+      cursor: pointer;
       position: relative;
       box-sizing: border-box;
       border-bottom: 1px solid $border-color;
         padding-top: 30px;
         height:70px;
+        
         .wrapper{
+          z-index: 3;
           background-color: $black;
           box-sizing: border-box;
           height: 275px;
@@ -30,16 +33,49 @@
             box-sizing: border-box;
             &-box{
             position: relative;
-              .option-more{
+
+            .wrapper-sub-option{
+              visibility: hidden;
                 position: absolute;
                 width: 140px;
                 height: 240px;
-                background-color: palevioletred;
+                background-color: $black;
                 right:-140px;
-                top:0;
-
-
+                top:13px;
+                padding-bottom:8%;
+                box-sizing: border-box;
+                .sub-op{
+                  background-color: $black;
+                  color: $white;
+                  font-weight: 400;
+                  height: 100%;
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  grid-template-rows: 1fr 1fr 1fr 1fr;
+                width:140px;
+                box-sizing: border-box;
+                .product-type{
+                  box-sizing: border-box;
+                  height: 100%;
+                  padding-top: 8%;
+                  .sub-text{
+                    box-sizing: border-box;
+                    height: 100%;
+                    width:100%;
+                    padding-left: 10%;
+                    padding-top:12%;
+                    background-color:$black;
+                    color:$white;
+                    &:hover{
+                      background-color:$basket-hover-color;
+                    color:$black;
+                    }
+                  }
+                  
+                }
+                }
               }
+
               .option{
                 box-sizing: border-box;
                 height: 100%;
@@ -51,22 +87,37 @@
                   padding-left: 10%;
                   padding-top:10%;
                 }
-                &:hover{
-                  .text{
-                    background-color: $basket-hover-color;
-                    color: $black;
+                @media screen and (min-width:1025px){
+                  &:hover{
+                    .wrapper-sub-option{
+                      visibility: visible;
+                    }
+                    .text{
+                      background-color: $basket-hover-color;
+                      color: $black;
+                    }
                   }
+
                 }
+                
               }
             }
           }
         }
-        &:hover{
-          .category-more{
-            visibility: visible;
-            opacity: 1;
-          }        
+        @media screen and (min-width:1025px) {
+          &:hover{
+            .category{
+  
+              color: $light-pink;
+            }
+  
+            .wrapper{
+              visibility: visible;
+              opacity: 1;
+            }        
+          }              
         }
+        
     }
     display: grid;
     grid-template-rows: 1fr;
