@@ -10,12 +10,12 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('js', function () {
   gulp.src('./src/js/**/*')
-    .pipe(gulp.dest('./web/js'))
+    .pipe(gulp.dest('./docs/js'))
 });
 gulp.task('img', function () {
   gulp.src('./src/images/**/*')
     .pipe(min())
-    .pipe(gulp.dest('./web/images'))
+    .pipe(gulp.dest('./docs/images'))
 });
 
 gulp.task('juck', function () {
@@ -28,7 +28,7 @@ gulp.task('juck', function () {
       removeComments: true,
       caseSensitive: true
     }))
-    .pipe(gulp.dest('./web'))
+    .pipe(gulp.dest('./docs'))
 });
 
 gulp.task('reload', function () {
@@ -37,7 +37,7 @@ gulp.task('reload', function () {
 
 gulp.task('serve', function () {
   browserSync.init({
-    server: './web'
+    server: './docs'
   });
   gulp.watch('./src/images/*', ['img']);
   gulp.watch('./src/js/main.js', ['js']);
@@ -57,7 +57,7 @@ gulp.task('sass', function () {
       cascade: false,
       grid: "autoplace"
   }))
-    .pipe(gulp.dest('./web/css'))
+    .pipe(gulp.dest('./docs/css'))
     .pipe(browserSync.stream());
 });
 gulp.task('build', ['serve', 'reload', 'sass', 'juck', 'img', 'js']);
