@@ -15,7 +15,7 @@ gulp.task('js', function () {
 gulp.task('img', function () {
   gulp.src('./src/images/**/*')
     .pipe(min())
-    .pipe(gulp.dest('./docs/images'))
+    .pipe(gulp.dest('./images'))
 });
 
 //no dalej
