@@ -18,6 +18,7 @@ gulp.task('img', function () {
     .pipe(gulp.dest('./docs/images'))
 });
 
+//no dalej
 gulp.task('juck', function () {
   return gulp.src(['./src/templates/*.html'])
     .pipe(juck({
